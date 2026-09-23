@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A simple in-memory to-do list built with HTML5, CSS3 and JavaScript."
+    >
+
+    <meta
+        name="author"
+        content="Rukhsar Hussain"
+    >
+
+    <title>To-Do List </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <section
+            class="todo-container"
+            aria-labelledby="page-title"
+        >
+
+            <header class="header">
+
+                <p class="task-label">
+                    TASK 16
+                </p>
+
+                <h1 id="page-title">
+                    Simple To-Do List
+                </h1>
+
+                <p class="description">
+                    Add and remove tasks using an in-memory JavaScript array.
+                </p>
+
+            </header>
+
+
+            <section class="todo-card">
+
+                <form
+                    class="todo-form"
+                    id="todoForm"
+                >
+
+                    <label
+                        for="taskInput"
+                        class="sr-only"
+                    >
+                        Enter a task
+                    </label>
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="Enter a task..."
+                        autocomplete="off"
+                        maxlength="100"
+                    >
+
+                    <button
+                        type="submit"
+                        class="add-button"
+                    >
+                        Add Task
+                    </button>
+
+                </form>
+
+
+                <p
+                    class="message"
+                    id="message"
+                    aria-live="polite"
+                ></p>
+
+
+                <div class="list-header">
+
+                    <h2>
+                        My Tasks
+                    </h2>
+
+                    <span id="taskCount">
+                        0 tasks
+                    </span>
+
+                </div>
+
+
+                <ul
+                    class="task-list"
+                    id="taskList"
+                ></ul>
+
+            </section>
+
+
+            
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
